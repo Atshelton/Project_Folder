@@ -10,7 +10,7 @@ def total
 end              # => :total
 
 def equal
-  return @currency_equality
+  return @currency_equality  # => nil
 end                          # => :equal
 
 def type
@@ -19,6 +19,6 @@ end             # => :type
 
 end  # => :type
 
-american_money = Currency.new(50,"dollars")  # => #<Currency:0x007fde1a153e20 @total=50, @type="dollars">
-japanese_money = Currency.new(50,"yen")      # => #<Currency:0x007fde1a153498 @total=50, @type="yen">
-european_money = Currency.new(50,"euro")     # => #<Currency:0x007fde1a152ca0 @total=50, @type="euro">
+american_money = Currency.new(50,"dollars")  # => #<Currency:0x007f811b023b88 @total=50, @type="dollars">
+japanese_money = Currency.new(50,"yen")      # => #<Currency:0x007f811b023200 @total=50, @type="yen">
+european_money = Currency.new(50,"euro")     # => #<Currency:0x007f811b022a08 @total=50, @type="euro">       # => false
